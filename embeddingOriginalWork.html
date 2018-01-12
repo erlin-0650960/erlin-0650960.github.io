@@ -2,6 +2,31 @@
 <html>
 	<head>
 		<title>Embedding Original Work</title>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+		type="text/javascript"></script>
+
+		<style type="text/css">
+		@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+		#feedControl {
+		margin-top : 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width : 440px;
+		font-size: 12px;
+		color: #9CADD0;
+		}
+		</style>
+		<script type="text/javascript">
+		function load() {
+		var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
+		new GFdynamicFeedControl(feed, "feedControl");
+
+		}
+		google.load("feeds", "1");
+		google.setOnLoadCallback(load);
+		</script>
 	</head>
 	<body>
 		<!--
@@ -9,18 +34,41 @@
 		1. YT vid embed
 		2. Google map
 		3. one not in demo
-
 		4. Object tag
 		5. html5 vid tag
 		6. YT at 3 min mark
-
 		7. html5 + audio tags
 		8. object that is not flash
 		9. RSS feed
 		10. YT + feature not in embed code paste
 		-->
-		<iframe width="854" height="480" src="https://www.youtube.com/embed/OoI57NeMwCc?start=180" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		<br />
+
+		<iframe width="854" height="480" src="https://www.youtube.com/embed/Sv_hGITmNuo?start=180&end=200" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 		<iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=software+ companies&aq=0&oq=software&sll=47.670993,-122.344752&sspn=0.263556,0.676346& ie=UTF8&hq=software+companies&hnear=&t=m&ll=47.670993,-122.344752&spn=0.263556,0.676346 &output=embed"></iframe>
+
+		<br />
+
 		<button>Click</button>
+
+		<br />
+
+		<audio controls>
+			<source src="static.mp3" type="audio/mpeg">
+			No audio
+		</audio>
+
+		<video height="90" width="160" controls>
+			<source src="static.mp4" type="video/mp4">
+			No vid
+		</video>
+
+		<object data="test.html">something</object>
+
+		<div id="body">
+		<div id="feedControl">Loading...</div>
+		</div>
+
 	</body>
 </html>

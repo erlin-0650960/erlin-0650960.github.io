@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Google</title>
+  <link>https://www.google.com/</link>
+  <description>Google</description>
+  <item>
+    <title>Google Feeling adventurous</title>
+    <link>https://www.google.com/search?q=roll+a+die&csf=b&ct=ifl&cad=2:adventurous&ei=4AxZWsHbBZLgjwPd0YygDw&ved=&rct=j</link>
+    <description>Feeling Adventurous</description>
+  </item>
+</channel>
+
+</rss>
